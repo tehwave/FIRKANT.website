@@ -1,5 +1,8 @@
 # FIRKANT.website
 
+[![Website](https://img.shields.io/website-up-down-green-red/https/peterchrjoergensen.dk/FIRKANT.svg?label=Website&style=flat-square)](https://peterchrjoergensen.dk/FIRKANT)
+[![Release](https://img.shields.io/github/release/tehwave/FIRKANT.website.svg?label=Release&style=flat-square)](https://github.com/tehwave/FIRKANT.website/releases)
+
 The website for the video game FIRKANT.
 
 ## Demo
