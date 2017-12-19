@@ -1,73 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- SEO -->
 		<title>FIRKANT – A fast-paced, procedural platformer</title>
+
+		<!-- Website -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- SEO -->
 		<meta name="author" content="Peter 'tehwave' Jørgensen">
 		<meta name="description" content="FIRKANT is a fast-paced, procedural platformer in development by Peter 'tehwave' Jørgensen.">
-
 		<meta property="og:title" content="FIRKANT">
 		<meta property="og:description" content="FIRKANT is a fast-paced, procedural platformer in development by Peter 'tehwave' Jørgensen.">
-
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@tehwave" />
-		<meta name="twitter:title" content="FIRKANT" />
-		<meta name="twitter:description" content="FIRKANT is a fast-paced, procedural platformer in development by Peter 'tehwave' Jørgensen." />
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@tehwave">
+		<meta name="twitter:title" content="FIRKANT">
+		<meta name="twitter:description" content="FIRKANT is a fast-paced, procedural platformer in development by Peter 'tehwave' Jørgensen.">
 
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="resources/css/FIRKANT.css">
 
 		<!-- Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
 
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css"  href="resources/css/reset.css"> <!-- CSS reset -->
-		<link rel="stylesheet" type="text/css"  href="resources/css/FIRKANT.min.css"> <!-- Resource style -->
-
-		<!-- GA -->
+		<!-- Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48445007-6"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments)};
-		  gtag('js', new Date());
-		  gtag('config', 'UA-48445007-6');
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-48445007-6');
 		</script>
 	</head>
 	<body>
-		<main id="FIRKANT">
-			<div class="background"></div>
-			<video autoplay poster="resources/img/background.png" class="video" loop muted>
+
+		<header class="FIRKANT-header">
+			<video autoplay poster="resources/img/background.png" class="FIRKANT-video" loop muted>
 				<source src="resources/files/FIRKANT-1.webm" type="video/webm">
 				<source src="resources/files/FIRKANT-1.mp4" type="video/mp4">
 
 				Your browser does not support the video tag. :'(
 			</video>
-			<div class="overlay-texture"></div>
-			<div class="overlay">
-				<section class="valign-outer">
-					<div class="valign-inner">
-						<h1>
-							<img class="img img-responsive" src="resources/img/FIRKANT-logo-white.png" alt="FIRKANT">
-						</h1>
-					</div>
+		</header>
+
+		<div class="FIRKANT-texture"></div>
+		<div class="FIRKANT-overlay"></div>
+
+		<main class="container FIRKANT-main">
+			<div class="row h-100">
+				<section class="col-12 text-center">
+					<img class="img-fluid my-5" src="resources/img/FIRKANT-logo-white.png" alt="FIRKANT">
 				</section>
-			</div>
-			<div class="text">
-				<div class="container-fluid">
-					<div class="row">
-						<section class="col-xs-12 col-sm-6 col-sm-push-3 text-center">
+				<section class="col-lg-6 mx-lg-auto align-self-end">
+					<article class="card mb-4 border-0">
+						<section class="card-body">
+
 							<!-- MailChimp Signup Form -->
 							<form action="https://twitter.us5.list-manage.com/subscribe/post?u=92cecfd03039b21c6f7462bba&amp;id=5c3de9ae12" method="post" name="mc-embedded-subscribe-form" class="form-inline" target="_blank">
-								<div class="input-group">
+								<label for="email" class="d-block d-md-none">
+									Subscribe to Newsletter
+								</label>
+
+								<div class="input-group mx-auto">
 									<!-- Email -->
 									<input id="email" type="email" value="" name="EMAIL" class="form-control" placeholder="Email" required>
 						    		<!-- Submit -->
 								  	<div class="input-group-btn">
-								  		<button type="submit" class="btn btn-primary">
-								  			Subscribe to Newsletter
+								  		<button type="submit" class="btn btn-info">
+								  			<span class="d-none d-md-block">
+								  				Subscribe to Newsletter
+								  			</span>
+								  			<span class="d-block d-md-none">
+								  				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"><g transform="translate(0, 0)"><path fill="#ffffff" d="M15.707,0.293c-0.273-0.272-0.68-0.365-1.043-0.234l-14,5C0.287,5.193,0.026,5.54,0.002,5.939 c-0.024,0.4,0.192,0.775,0.551,0.955l4.586,2.292L11,5l-4.187,5.862l2.292,4.586C9.276,15.787,9.623,16,10,16 c0.021,0,0.041-0.001,0.061-0.002c0.4-0.024,0.747-0.284,0.882-0.662l5-14C16.072,0.973,15.98,0.566,15.707,0.293z"></path></g></svg>
+								  			</span>
 								  		</button>
 								  	</div>
 								</div>
@@ -78,14 +87,20 @@
 						    	</span>
 							</form>
 						</section>
-						<section class="col-xs-6 col-sm-3 col-sm-pull-6">
-							<h2 class="text-left"><a href="https://www.twitter.com/tehwave" target="_blank" rel="noopener">@tehwave</a></h2>
-						</section>
-						<section class="col-xs-6 col-sm-3">
-							<h2 class="text-right"><a href="https://twitter.com/hashtag/FIRKANT?src=hash" target="_blank" rel="noopener">#FIRKANT</a></h2>
-						</section>
-					</div>
-				</div>
+						<footer class="card-footer bg-info text-white">
+							<div class="row">
+								<section class="col col-lg">
+									<h6 class="text-uppercase mb-1">Follow the developer</h6>
+									<a class="card-link h4" href="https://www.twitter.com/tehwave" target="_blank" rel="noopener">@tehwave</a>
+								</section>
+								<section class="col col-lg text-right">
+									<h6 class="text-uppercase mb-1">Share the game</h6>
+									<a class="card-link h4" href="https://twitter.com/hashtag/FIRKANT?src=hash" target="_blank" rel="noopener">#FIRKANT</a>
+								</section>
+							</div>
+						</footer>
+					</article>
+				</section>
 			</div>
 		</main>
 	</body>
