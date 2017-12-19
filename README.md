@@ -24,4 +24,4 @@ git pull origin master
 
 ## License
 
-2017 (c) Peter Christian Jørgensen. All Rights Reserved.
+© Peter Christian Jørgensen. All Rights Reserved.
